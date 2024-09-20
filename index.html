@@ -1,0 +1,36 @@
+a<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loja Amigões</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Bem-vindo à Loja Amigões!</h1>
+
+	<div id="login-form" class="form">
+		<h2>Login</h2>
+		<input type="text" id="login-username" placeholder="Usuário" required>
+		<input type="password" id="login-password" placeholder="Senha" required>
+		<button onclick="login()">Login</button>
+	</div>
+
+	<div id="register-form" class="form">
+		<h2>Cadastro</h2>
+		<input type="text" id="register-username" placeholder="Usuário" required>
+		<input type="password" id="register-password" placeholder="Senha" required>
+		<button onclick="register()">Cadastrar</button>
+	</div>
+
+	<div id="produtos"></div>
+
+	<h2>Total: R$ <span id="total">0.00</span></h2>
+	<button id="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
